@@ -12,12 +12,12 @@ include('dbcontroller.php');
     
     if($count == 1){  
         if($row['auth']==1)
-        echo "<h1><center> Login successful ADMIN </center></h1>";  
+        header("Location: admin.php");  
         if($row['auth']==0)
-        echo "<h1><center> Login successful USER </center></h1>";  
+        header("Location: user.php");  
     }  
     else{  
-        echo "<h1> Login failed. Invalid username or password.</h1>";  
+        header("Location: index.html");  
     }     
     
 ?>

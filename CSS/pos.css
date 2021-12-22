@@ -1,0 +1,35 @@
+
+.header{
+    max-height: 75px;
+}
+
+
+.header-products{
+    text-align: center;
+
+
+}
+
+
+
+.header-item{
+    display: inline;
+    font-size: 30px;
+    color:white;
+    margin-right: 10px;
+}
+
+.header-item-display-trigger{
+    display: none; 
+}
+
+.header-dropdown-item{
+    display:none;
+    font-size: 30px;
+    color:white;
+    margin-right: 10px;
+}
+
+.header-dropdown-display-trigger{
+    display: inline; 
+}
