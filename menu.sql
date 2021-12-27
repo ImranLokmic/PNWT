@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `menu` (
   `id` int(8) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `type` varchar(255) NOT NULL,
+  `food` varchar(255) NOT NULL,
   `code` varchar(255) NOT NULL,
   `price` double(10,2) NOT NULL,
   `image` text NOT NULL
@@ -40,7 +40,7 @@ CREATE TABLE `menu` (
 -- Dumping data for table `menu`
 --
 
-INSERT INTO `menu` (`id`, `name`, `type`, `code`, `price`, `image`) VALUES
+INSERT INTO `menu` (`id`, `name`, `food`, `code`, `price`, `image`) VALUES
 (1, 'Fanta', 'soft', 'SFNT', 3.00, 'productimages/drinks/soft/fanta.jpg'),
 (2, 'Whiskey Neat', 'alch', 'AWHSKY', 7.00, 'productimages/drinks/alcohol/whiskey.jpg'),
 (3, 'Barbecue Ribs', 'bbq', 'BRBS', 20.00, 'productimages/bbq/ribs.jpg'),
