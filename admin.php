@@ -149,7 +149,7 @@ if(isset($_SESSION["cart_item"])){
 		<div class="product-item softdrinks">
 			<form method="post" action="admin.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
 				<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"
-						style="max-height:150px"></div>
+						style="max-height:150px;max-width:240px;"></div>
 				<div class="product-tile-footer">
 					<div class="product-title"><?php echo $product_array[$key]["name"]; ?></div>
 					<div class="product-price"><?php echo "$".$product_array[$key]["price"]; ?></div>
@@ -175,7 +175,7 @@ if(isset($_SESSION["cart_item"])){
 		<div class="product-item alch">
 			<form method="post" action="admin.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
 				<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"
-						style="max-height:150px"></div>
+						style="max-height:150px;max-width:240px;"></div>
 				<div class="product-tile-footer">
 					<div class="product-title"><?php echo $product_array[$key]["name"]; ?></div>
 					<div class="product-price"><?php echo "$".$product_array[$key]["price"]; ?></div>
@@ -201,7 +201,7 @@ if(isset($_SESSION["cart_item"])){
 		<div class="product-item app">
 			<form method="post" action="admin.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
 				<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"
-						style="max-height:150px"></div>
+						style="max-height:150px;max-width:240px;"></div>
 				<div class="product-tile-footer">
 					<div class="product-title"><?php echo $product_array[$key]["name"]; ?></div>
 					<div class="product-price"><?php echo "$".$product_array[$key]["price"]; ?></div>
@@ -227,7 +227,7 @@ if(isset($_SESSION["cart_item"])){
 		<div class="product-item bbq">
 			<form method="post" action="admin.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
 				<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"
-						style="max-height:150px"></div>
+						style="max-height:150px;max-width:240px;"></div>
 				<div class="product-tile-footer">
 					<div class="product-title"><?php echo $product_array[$key]["name"]; ?></div>
 					<div class="product-price"><?php echo "$".$product_array[$key]["price"]; ?></div>
@@ -253,7 +253,7 @@ if(isset($_SESSION["cart_item"])){
 		<div class="product-item steaks">
 			<form method="post" action="admin.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
 				<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"
-						style="max-height:150px"></div>
+						style="max-height:150px;max-width:240px;"></div>
 				<div class="product-tile-footer">
 					<div class="product-title"><?php echo $product_array[$key]["name"]; ?></div>
 					<div class="product-price"><?php echo "$".$product_array[$key]["price"]; ?></div>
@@ -279,7 +279,7 @@ if(isset($_SESSION["cart_item"])){
 		<div class="product-item pasta">
 			<form method="post" action="admin.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
 				<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"
-						style="max-height:150px"></div>
+						style="max-height:150px;max-width:240px;"></div>
 				<div class="product-tile-footer">
 					<div class="product-title"><?php echo $product_array[$key]["name"]; ?></div>
 					<div class="product-price"><?php echo "$".$product_array[$key]["price"]; ?></div>
@@ -305,7 +305,7 @@ if(isset($_SESSION["cart_item"])){
 		<div class="product-item pizza">
 			<form method="post" action="admin.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
 				<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"
-						style="max-height:150px"></div>
+						style="max-height:150px;max-width:240px;"></div>
 				<div class="product-tile-footer">
 					<div class="product-title"><?php echo $product_array[$key]["name"]; ?></div>
 					<div class="product-price"><?php echo "$".$product_array[$key]["price"]; ?></div>
@@ -331,7 +331,7 @@ if(isset($_SESSION["cart_item"])){
 		<div class="product-item salad">
 			<form method="post" action="admin.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
 				<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"
-						style="max-height:150px"></div>
+						style="max-height:150px;max-width:240px;"></div>
 				<div class="product-tile-footer">
 					<div class="product-title"><?php echo $product_array[$key]["name"]; ?></div>
 					<div class="product-price"><?php echo "$".$product_array[$key]["price"]; ?></div>
@@ -354,6 +354,18 @@ if(isset($_SESSION["cart_item"])){
 
 
 <script>
+	$( document ).ready(function(){
+		$(".softdrinks").hide();
+        $(".alch").hide();
+        $(".app").hide();
+        $(".bbq").hide();
+        $(".steaks").hide();
+        $(".pasta").hide();
+        $(".pizza").hide();
+        $(".salad").hide();
+	});
+
+
     function dDropdown(){
         $(".header-dropdown-item").toggleClass("header-dropdown-display-trigger");
         $(".header-item").toggleClass("header-item-display-trigger");
@@ -387,6 +399,7 @@ if(isset($_SESSION["cart_item"])){
 
     function app(){
         $(".softdrinks").hide();
+		$(".alch").hide();
         $(".app").show();
         $(".bbq").hide();
         $(".steaks").hide();

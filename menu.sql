@@ -41,15 +41,15 @@ CREATE TABLE `menu` (
 --
 
 INSERT INTO `menu` (`id`, `name`, `food`, `code`, `price`, `image`) VALUES
-(1, 'Fanta', 'soft', 'SFNT', 3.00, 'productimages/drinks/soft/fanta.jpg'),
-(2, 'Whiskey Neat', 'alch', 'AWHSKY', 7.00, 'productimages/drinks/alcohol/whiskey.jpg'),
-(3, 'Barbecue Ribs', 'bbq', 'BRBS', 20.00, 'productimages/bbq/ribs.jpg'),
-(4, 'French Fries', 'app', 'AFRS', 5.00, 'productimages/appetisers/frenchfries.jpg'),
-(5, 'Spaghetti Bolognese', 'pasta', 'SPGBLG', 17.00, 'productimages/pasta/bolognese.jpg'),
-(6, 'Margaritha', 'pizza', 'PMRG', 14.00, 'productimages/pizza/margaritha.jpg'),
-(7, 'Cesar Salad', 'salad', 'SCSR', 11.00, 'productimages/salads/cesarsalad.jpg'),
-(8, 'New York Strip', 'steaks', 'SNYS', 35.00, 'productimages/steaks/newyorkstrip.jpg'),
-(9, 'Coca-Cola', 'soft', 'SCCL', 3.00, 'productimages/drinks/soft/cola.jpg');
+(1, 'Fanta', 'soft', 'SFNT', 3.00, 'productimages/drinks/soft/fanta.png'),
+(2, 'Whiskey Neat', 'alch', 'AWHSKY', 7.00, 'productimages/drinks/alcohol/whiskey.png'),
+(3, 'Barbecue Ribs', 'bbq', 'BRBS', 20.00, 'productimages/bbq/ribs.png'),
+(4, 'French Fries', 'app', 'AFRS', 5.00, 'productimages/appetisers/frenchfries.png'),
+(5, 'Spaghetti Bolognese', 'pasta', 'SPGBLG', 17.00, 'productimages/pasta/bolognese.png'),
+(6, 'Margherita', 'pizza', 'PMRG', 14.00, 'productimages/pizza/margherita.png'),
+(7, 'Cesar Salad', 'salad', 'SCSR', 11.00, 'productimages/salads/cesarsalad.png'),
+(8, 'New York Strip', 'steaks', 'SNYS', 35.00, 'productimages/steaks/newyorkstrip.png'),
+(9, 'Coca-Cola', 'soft', 'SCCL', 3.00, 'productimages/drinks/soft/cola.png');
 
 --
 -- Indexes for dumped tables
