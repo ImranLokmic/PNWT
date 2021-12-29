@@ -80,7 +80,7 @@ if(!empty($_GET["action"])) {
         <span class="close" onclick="cartClose()">&times;</span>
 		<div class="txt-heading">Shopping Cart</div>
 
-		<a id="btnEmpty" href="admin.php?action=empty">Empty Cart</a>
+		<a id="btnEmpty" href="user.php?action=empty">Empty Cart</a>
 		<?php
 if(isset($_SESSION["cart_item"])){
     $total_quantity = 0;
@@ -108,7 +108,7 @@ if(isset($_SESSION["cart_item"])){
 					<td style="text-align:right;"><?php echo $item["quantity"]; ?></td>
 					<td style="text-align:right;"><?php echo "$ ".$item["price"]; ?></td>
 					<td style="text-align:right;"><?php echo "$ ". number_format($item_price,2); ?></td>
-					<td style="text-align:center;"><a href="admin.php?action=remove&code=<?php echo $item["code"]; ?>"
+					<td style="text-align:center;"><a href="user.php?action=remove&code=<?php echo $item["code"]; ?>"
 							class="btnRemoveAction"><img src="IMAGES\icon-delete.png" style="max-height:30px" alt="Remove Item" /></a></td>
 				</tr>
 				<?php
@@ -147,7 +147,7 @@ if(isset($_SESSION["cart_item"])){
 				foreach($product_array as $key=>$value){
 			?>
 		<div class="product-item softdrinks">
-			<form method="post" action="admin.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
+			<form method="post" action="user.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
 				<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"
 						style="max-height:150px;max-width:240px;"></div>
 				<div class="product-tile-footer">
@@ -173,7 +173,7 @@ if(isset($_SESSION["cart_item"])){
 				foreach($product_array as $key=>$value){
 			?>
 		<div class="product-item alch">
-			<form method="post" action="admin.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
+			<form method="post" action="user.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
 				<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"
 						style="max-height:150px;max-width:240px;"></div>
 				<div class="product-tile-footer">
@@ -199,7 +199,7 @@ if(isset($_SESSION["cart_item"])){
 				foreach($product_array as $key=>$value){
 			?>
 		<div class="product-item app">
-			<form method="post" action="admin.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
+			<form method="post" action="user.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
 				<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"
 						style="max-height:150px;max-width:240px;"></div>
 				<div class="product-tile-footer">
@@ -225,7 +225,7 @@ if(isset($_SESSION["cart_item"])){
 				foreach($product_array as $key=>$value){
 			?>
 		<div class="product-item bbq">
-			<form method="post" action="admin.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
+			<form method="post" action="user.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
 				<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"
 						style="max-height:150px;max-width:240px;"></div>
 				<div class="product-tile-footer">
@@ -251,7 +251,7 @@ if(isset($_SESSION["cart_item"])){
 				foreach($product_array as $key=>$value){
 			?>
 		<div class="product-item steaks">
-			<form method="post" action="admin.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
+			<form method="post" action="user.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
 				<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"
 						style="max-height:150px;max-width:240px;"></div>
 				<div class="product-tile-footer">
@@ -277,7 +277,7 @@ if(isset($_SESSION["cart_item"])){
 				foreach($product_array as $key=>$value){
 			?>
 		<div class="product-item pasta">
-			<form method="post" action="admin.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
+			<form method="post" action="user.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
 				<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"
 						style="max-height:150px;max-width:240px;"></div>
 				<div class="product-tile-footer">
@@ -303,7 +303,7 @@ if(isset($_SESSION["cart_item"])){
 				foreach($product_array as $key=>$value){
 			?>
 		<div class="product-item pizza">
-			<form method="post" action="admin.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
+			<form method="post" action="user.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
 				<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"
 						style="max-height:150px;max-width:240px;"></div>
 				<div class="product-tile-footer">
@@ -329,7 +329,7 @@ if(isset($_SESSION["cart_item"])){
 				foreach($product_array as $key=>$value){
 			?>
 		<div class="product-item salad">
-			<form method="post" action="admin.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
+			<form method="post" action="user.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
 				<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"
 						style="max-height:150px;max-width:240px;"></div>
 				<div class="product-tile-footer">
