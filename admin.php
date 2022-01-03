@@ -3,7 +3,6 @@ session_start();
 require_once("dbmenu.php");
 $db_handle = new DBController();
 ?>
-
 <html>
 
 <head>
@@ -36,10 +35,63 @@ $db_handle = new DBController();
 </div>
 
 <div id="add-item-menu">
-	<div id="add-item-modal">
-		<span class="close" onclick="closeItem()">&times;</span>
-
-	</div>
+		<div class="login-box">
+			<form id="additem" method="post" action="add.php">
+				<div class="user-box">
+					<input type="text" name="pname" required="">
+					<label>Product Name</label>
+				</div>
+				<div class="user-box">
+					<input type="text" name="code" required="">
+					<label>Code</label>
+				</div>
+				<div class="user-box">
+					<input type="number" name="price" required="">
+					<label>Price</label>
+				</div>
+				<div class="user-box">
+					<input type="radio" name="food" value="soft" required="">
+					<label>Soft Drinks</label>
+				</div>
+				<div class="user-box">
+					<input type="radio" name="food" value="alch" required="">
+					<label>Alchohol</label>
+				</div>
+				<div class="user-box">
+					<input type="radio" name="food" value="app" required="">
+					<label>Appetisers</label>
+				</div>
+				<div class="user-box">
+					<input type="radio" name="food" value="bbq" required="">
+					<label>BBQ</label>
+				</div>
+				<div class="user-box">
+					<input type="radio" name="food" value="steaks" required="">
+					<label>Steaks</label>
+				</div>
+				<div class="user-box">
+					<input type="radio" name="food" value="pasta" required="">
+					<label>Pasta</label>
+				</div>
+				<div class="user-box">
+					<input type="radio" name="food" value="pizza" required="">
+					<label>Pizza</label>
+				</div>
+				<div class="user-box">
+					<input type="radio" name="food" value="salad" required="">
+					<label>Salad</label>
+				</div>
+				<a href="#" onclick="addItemSubmit()" value="submit">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					Submit
+				</a>
+				<span class="close" onclick="closeItem()">&times;</span>
+			</form>
+		</div>
+	
 </div>
 
 <div id="product-grid">
@@ -374,6 +426,11 @@ $db_handle = new DBController();
 	function closeItem() {
 		$("#add-item-menu").hide();
 	}
+
+	function addItemSubmit(){
+    document.getElementById('additem').submit();
+    return false;
+    }
 </script>
 
 </html>

@@ -29,18 +29,18 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `menu` (
   `id` int(8) NOT NULL,
-  `name` varchar(255) NOT NULL,
+  `pname` varchar(255) NOT NULL,
   `food` varchar(255) NOT NULL,
   `code` varchar(255) NOT NULL,
   `price` double(10,2) NOT NULL,
-  `image` text NOT NULL
+  `pimage` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `menu`
 --
 
-INSERT INTO `menu` (`id`, `name`, `food`, `code`, `price`, `image`) VALUES
+INSERT INTO `menu` (`id`, `pname`, `food`, `code`, `price`, `pimage`) VALUES
 (1, 'Fanta', 'soft', 'SFNT', 3.00, 'productimages/drinks/soft/fanta.png'),
 (2, 'Whiskey Neat', 'alch', 'AWHSKY', 7.00, 'productimages/drinks/alcohol/whiskey.png'),
 (3, 'Barbecue Ribs', 'bbq', 'BRBS', 20.00, 'productimages/bbq/ribs.png'),
